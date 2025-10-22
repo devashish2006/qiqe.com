@@ -150,7 +150,7 @@ export default function QiqeDomainSale() {
             className="group inline-flex items-center gap-2 sm:gap-4 px-8 sm:px-10 lg:px-12 py-4 sm:py-5 lg:py-6 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full text-lg sm:text-xl lg:text-2xl font-bold shadow-2xl shadow-green-500/50 hover:shadow-green-500/80 hover:scale-110 transition-all duration-300"
           >
             <MessageCircle className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 group-hover:rotate-12 transition-transform" />
-            <span className="whitespace-nowrap">Get It Now - $5,000</span>
+            <span className="whitespace-nowrap">Get It Now - $18,000</span>
           </button>
           <div className="text-gray-400 mt-4 sm:mt-6 space-y-2">
             <p className="text-sm sm:text-base">📱 WhatsApp: +91 78280 47646</p>
