@@ -14,11 +14,11 @@ export default function QiqeDomainSale() {
   }, []);
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/917828047646?text=Hi, I\'m interested in purchasing QIQE.com', '_blank');
+    window.open('https://wa.me/917828047646?text=Hi, I\'m interested in purchasing VUHI.com', '_blank');
   };
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:shriyansh.mishra@zohomail.in?subject=Interested in QIQE.com&body=Hi, I\'m interested in purchasing QIQE.com';
+    window.location.href = 'mailto:shriyansh.mishra@zohomail.in?subject=Interested in VUHI.com&body=Hi, I\'m interested in purchasing VUHI.com';
   };
 
   return (
@@ -54,7 +54,7 @@ export default function QiqeDomainSale() {
 
           {/* Main Domain Display */}
           <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black mb-4 sm:mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
-            QIQE.COM
+            VUHI.COM
           </h1>
 
           {/* Price Section */}
@@ -101,7 +101,7 @@ export default function QiqeDomainSale() {
       {/* Features Section */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-center mb-10 sm:mb-12 lg:mb-16 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-          Why QIQE.com?
+          Why VUHI.com?
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
@@ -143,7 +143,7 @@ export default function QiqeDomainSale() {
         <div className="bg-gradient-to-r from-purple-900/40 to-blue-900/40 border-2 border-purple-500/50 rounded-3xl p-6 sm:p-10 lg:p-12 backdrop-blur-sm">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6">Don't Miss This Opportunity</h2>
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 max-w-3xl mx-auto">
-            Premium 4-letter .com domains rarely come to market. Secure QIQE.com today at 50% off.
+            Premium 4-letter .com domains rarely come to market. Secure VUHI.com today at 50% off.
           </p>
           <button
             onClick={handleWhatsAppClick}
@@ -162,7 +162,7 @@ export default function QiqeDomainSale() {
       {/* Footer */}
       <div className="relative z-10 border-t border-purple-500/20 py-6 sm:py-8">
         <p className="text-center text-gray-400 text-sm sm:text-base px-4">
-          © 2025 QIQE.com - Premium Domain For Sale
+          © 2025 VUHI.com - Premium Domain For Sale
         </p>
       </div>
 
