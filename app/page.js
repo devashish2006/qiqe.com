@@ -68,7 +68,7 @@ export default function QiqeDomainSale() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
                 <span className="text-2xl sm:text-3xl lg:text-4xl text-gray-500 line-through">$10,000</span>
                 <span className="text-5xl sm:text-6xl lg:text-7xl font-black bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
-                  $5,000
+                  $18,000
                 </span>
               </div>
               <p className="text-base sm:text-lg lg:text-xl text-gray-300 mt-3 sm:mt-4">Limited Time Offer - Act Fast!</p>
