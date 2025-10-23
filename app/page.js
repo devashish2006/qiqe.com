@@ -13,12 +13,12 @@ export default function QiqeDomainSale() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleWhatsAppClick = () => {
-    window.open('https://wa.me/917828047646?text=Hi, I\'m interested in purchasing VUHI.com', '_blank');
+  const handleWhatsAppClick = (domain = 'VUHI.com') => {
+    window.open(`https://wa.me/917828047646?text=Hi, I'm interested in purchasing ${domain}`, '_blank');
   };
 
-  const handleEmailClick = () => {
-    window.location.href = 'mailto:shriyansh.mishra@zohomail.in?subject=Interested in VUHI.com&body=Hi, I\'m interested in purchasing VUHI.com';
+  const handleEmailClick = (domain = 'VUHI.com') => {
+    window.location.href = `mailto:shriyansh.mishra@zohomail.in?subject=Interested in ${domain}&body=Hi, I'm interested in purchasing ${domain}`;
   };
 
   return (
@@ -49,7 +49,7 @@ export default function QiqeDomainSale() {
           {/* Premium Badge */}
           <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-full mb-6 sm:mb-8 animate-bounce">
             <Star className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400" />
-            <span className="text-sm sm:text-base text-yellow-300 font-semibold">Premium CVCV Domain</span>
+            <span className="text-sm sm:text-base text-yellow-300 font-semibold">Premium VUHI Domain</span>
           </div>
 
           {/* Main Domain Display */}
@@ -78,7 +78,7 @@ export default function QiqeDomainSale() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-center">
             <button
-              onClick={handleWhatsAppClick}
+              onClick={() => handleWhatsAppClick()}
               className="group relative inline-flex items-center gap-2 sm:gap-4 px-6 sm:px-10 lg:px-12 py-4 sm:py-5 lg:py-6 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full text-lg sm:text-xl lg:text-2xl font-bold shadow-2xl shadow-green-500/50 hover:shadow-green-500/80 hover:scale-110 transition-all duration-300 animate-pulse w-full sm:w-auto"
             >
               <MessageCircle className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 group-hover:rotate-12 transition-transform" />
@@ -87,7 +87,7 @@ export default function QiqeDomainSale() {
             </button>
 
             <button
-              onClick={handleEmailClick}
+              onClick={() => handleEmailClick()}
               className="group relative inline-flex items-center gap-2 sm:gap-4 px-6 sm:px-10 lg:px-12 py-4 sm:py-5 lg:py-6 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full text-lg sm:text-xl lg:text-2xl font-bold shadow-2xl shadow-blue-500/50 hover:shadow-blue-500/80 hover:scale-110 transition-all duration-300 w-full sm:w-auto"
             >
               <Mail className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 group-hover:rotate-12 transition-transform" />
@@ -146,7 +146,7 @@ export default function QiqeDomainSale() {
             Premium 4-letter .com domains rarely come to market. Secure VUHI.com today at 50% off.
           </p>
           <button
-            onClick={handleWhatsAppClick}
+            onClick={() => handleWhatsAppClick()}
             className="group inline-flex items-center gap-2 sm:gap-4 px-8 sm:px-10 lg:px-12 py-4 sm:py-5 lg:py-6 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full text-lg sm:text-xl lg:text-2xl font-bold shadow-2xl shadow-green-500/50 hover:shadow-green-500/80 hover:scale-110 transition-all duration-300"
           >
             <MessageCircle className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 group-hover:rotate-12 transition-transform" />
@@ -157,6 +157,47 @@ export default function QiqeDomainSale() {
             <p className="text-sm sm:text-base">✉️ Email: shriyansh.mishra@zohomail.in</p>
           </div>
         </div>
+      </div>
+
+      {/* Other Premium Domains Section */}
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-center mb-10 sm:mb-12 lg:mb-16 bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
+          Checkout Our Other Premium Domains
+        </h2>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          {[
+            { name: "RAVI.COM", description: "Popular Indian name - Perfect for personal branding" },
+            { name: "MARKETONLINE.COM", description: "E-commerce powerhouse - Ideal for online marketplace" },
+            { name: "POHU.COM", description: "Unique 4-letter domain - Memorable and brandable" },
+            { name: "GASSAUDI.COM", description: "Energy sector domain - Perfect for Saudi market" }
+          ].map((domain, index) => (
+            <div
+              key={index}
+              className="group relative p-4 sm:p-6 bg-gradient-to-br from-indigo-900/40 to-purple-900/40 border-2 border-indigo-500/30 rounded-2xl backdrop-blur-sm hover:border-indigo-400/60 hover:scale-105 transition-all duration-500 cursor-pointer"
+              onClick={() => handleWhatsAppClick(domain.name)}
+              style={{
+                animation: `fadeInUp 0.6s ease-out ${index * 0.15}s both`
+              }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity blur-xl" />
+              <div className="relative">
+                <h3 className="text-xl sm:text-2xl font-black mb-2 sm:mb-3 bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent group-hover:scale-110 transition-transform inline-block">
+                  {domain.name}
+                </h3>
+                <p className="text-gray-300 text-sm sm:text-base mb-3 sm:mb-4">{domain.description}</p>
+                <div className="inline-flex items-center gap-2 text-green-400 font-semibold text-sm sm:text-base group-hover:gap-3 transition-all">
+                  <span>Inquire Now</span>
+                  <MessageCircle className="w-4 h-4 group-hover:rotate-12 transition-transform" />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <p className="text-center text-gray-300 mt-8 sm:mt-10 text-base sm:text-lg">
+          Click any domain to inquire via WhatsApp or email us for bulk deals
+        </p>
       </div>
 
       {/* Footer */}
